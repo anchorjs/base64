@@ -1,18 +1,6 @@
 define(['exports'],
 function(exports) {
   
-  // Base64 implementations:
-  // https://github.com/ForbesLindesay/base64-decode
-  // https://github.com/ForbesLindesay/base64-encode
-  // https://github.com/mshang/base64-js
-  // https://github.com/dankogai/js-base64
-  //
-  // http://rumkin.com/tools/cipher/base64.php
-  // http://rumkin.com/tools/cipher/js/base64.js
-  
-  // https://developer.mozilla.org/en-US/docs/DOM/window.atob
-  // https://developer.mozilla.org/en-US/docs/DOM/window.btoa
-
   var keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
 
   function encode(input) {
