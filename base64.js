@@ -1,8 +1,35 @@
+/**
+ * Module definition.
+ *
+ * Credits:
+ *
+ * This code is based on code originally written by Tyler Akins <http://rumkin.com/>,
+ * as available here:
+ *   http://rumkin.com/tools/cipher/js/base64.js
+ * 
+ * Other implementations known derive from (or include verbatim) this lineage
+ * include:
+ *   https://github.com/ForbesLindesay/base64-encode
+ *   https://github.com/ForbesLindesay/base64-decode
+ *   https://github.com/metajack/strophejs/blob/master/src/base64.js
+ */
 define(['exports'],
 function(exports) {
   
   var keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
-
+  
+  /**
+   * Creates a Base64 encoded ASCII string from a JavaScript string.
+   *
+   * Attempting to encode a Unicode string may result in invalid output.  To
+   * avoid this, first UTF-8 encode the string and then Base64 encode it:
+   *
+   *     base64.encode(utf8.encode(str));
+   *
+   * @param {String} input
+   * @return {String}
+   * @api public
+   */
   function encode(input) {
     var output = '';
     var chr1, chr2, chr3;
@@ -33,6 +60,13 @@ function(exports) {
     return output;
   }
 
+  /**
+   * Decodes a string which has been encoded using Base64 encoding.
+   *
+   * @param {String} input
+   * @return {String}
+   * @api public
+   */
   function decode(input) {
     var output = '';
     var chr1, chr2, chr3;
@@ -65,6 +99,9 @@ function(exports) {
     return output;
   }
   
+  /**
+   * Expose functions.
+   */
   exports.encode = encode;
   exports.decode = decode;
 });
