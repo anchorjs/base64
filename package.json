@@ -1,0 +1,22 @@
+{
+  "name": "base64",
+  "version": "0.0.0",
+  "description": "Base64 module for Anchor.js.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anchorjs/base64.git"
+  },
+  "bugs": {
+    "url": "http://github.com/anchorjs/base64/issues"
+  },
+  "author": { "name": "Jared Hanson", "email": "jaredhanson@gmail.com", "url": "http://www.jaredhanson.net/" },
+  "licenses": [ {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT" 
+  } ],
+  "main": "base64",
+  "volo": {
+    "dependencies": {
+    }
+  }
+}
