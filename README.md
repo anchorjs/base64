@@ -21,7 +21,7 @@ base64.encode('JavaScript');
 Decode a Base64 string to a JavaScript string.
 
 ```javascript
-base64.decode('JavaScript')
+base64.decode('SmF2YVNjcmlwdA==')
 ```
 
 ## Tests
