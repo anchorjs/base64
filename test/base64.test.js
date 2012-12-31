@@ -1,7 +1,5 @@
-define(['base64',
-        'chai'],
-function(base64, chai) {
-  var expect = chai.expect;
+define(['base64'],
+function(base64) {
 
   describe("base64", function() {
 
