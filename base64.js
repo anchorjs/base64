@@ -21,8 +21,9 @@ function(exports) {
   /**
    * Creates a Base64 encoded ASCII string from a JavaScript string.
    *
-   * Attempting to encode a Unicode string may result in invalid output.  To
-   * avoid this, first UTF-8 encode the string and then Base64 encode it:
+   * Attempting to encode a Unicode string containing code points in a
+   * supplementary plane may result in invalid output.  To avoid this, first
+   * UTF-8 encode the string and then Base64 encode it:
    *
    *     base64.encode(utf8.encode(str));
    *
