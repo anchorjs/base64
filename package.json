@@ -1,6 +1,6 @@
 {
   "name": "base64",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Base64 module for Anchor.js.",
   "repository": {
     "type": "git",
