@@ -1,0 +1,11 @@
+{
+  "name": "base64",
+  "version": "0.0.0",
+  "description": "Utilities for Base64 binary-to-text encoding.",
+  "repo": "anchorjs/base64",
+  "main": "base64.js",
+  "scripts": [
+    "base64.js"
+  ],
+  "license": "MIT"
+}

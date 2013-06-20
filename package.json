@@ -1,7 +1,7 @@
 {
   "name": "base64",
   "version": "0.0.1",
-  "description": "Base64 module for Anchor.js.",
+  "description": "Utilities for Base64 binary-to-text encoding.",
   "repository": {
     "type": "git",
     "url": "git://github.com/anchorjs/base64.git"
