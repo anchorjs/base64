@@ -6,7 +6,14 @@ TESTS = test/*.test.js
 # ==============================================================================
 
 build-browserify:
-	browserify -t deamdify base64.js -o bundle.js
+	mkdir -p build
+	browserify -t deamdify base64.js -o build/bundle.js
+	
+build-component: components
+	component build -u component-amd
+
+components:
+	component install
 
 
 # ==============================================================================
@@ -68,9 +75,11 @@ lint:
 # ==============================================================================
 
 clean:
+	rm -rf build
 
 clobber: clean
 	rm -rf node_modules
+	rm -rf components
 	rm -rf test/www/js/lib
 
 
