@@ -1,0 +1,25 @@
+{
+  "name": "base64",
+  "version": "0.0.0",
+  "description": "Utilities for Base64 binary-to-text encoding.",
+  "authors": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "homepage": "http://www.jaredhanson.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anchorjs/base64.git"
+  },
+  "license": "MIT",
+  "main": "main.js",
+  "ignore": [
+    ".gitignore",
+    ".jshintrc",
+    "Makefile",
+    "README.md",
+    "component.json",
+    "package.json",
+    "test"
+  ]
+}
